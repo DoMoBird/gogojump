@@ -1,0 +1,1 @@
+.flip-container{perspective:1000}.flip-container.hover .flipper,.flip-container:hover .flipper{transform:rotateY(180deg)}.back,.flip-container,.flipper,.front{width:100%;height:100%}.flipper{transition:.6s;transform-style:preserve-3d;position:relative}.back,.front{backface-visibility:hidden;position:absolute;top:0;left:0}.front{z-index:1}.back{transform:rotateY(180deg)}

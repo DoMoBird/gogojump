@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+    {% endblock %}</title>
+    {#    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_abesapgvqjh.css">#}
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_6tob2dk1pee.css">
+{#    <link rel="stylesheet" href="{% static 'css/common/auth.min.css' %}">#}
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/front_base.min.js' %}"></script>
+    <script src="{% static 'js/xfzajax.min.js' %}"></script>
+    <script src="{% static 'js/message.min.js' %}"></script>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="/"></a>
+        </div>
+
+        <ul class="nav">
+            <li class="active"><a href="#">INICIO</a></li>
+            <li><a href="#">ACTIVIDADES</a></li>
+            <li><a href="#">TARIFAS</a></li>
+            <li><a href="#">SEGURIDAD</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+        <div class="ticket" id="parallelogram">
+            <a href="#">ENTRADA</a>
+        </div>
+
+
+    </div>
+</header>
+{% block main %}
+{% endblock %}
+
+<footer class="footer">
+    <div class="top-group">
+        <div class="top-inner-group">
+            <div class="logo-group footer-group">
+                <div class="logo-box">
+                    <a href="/">
+                        <img src="https://streetjump.es/wp-content/uploads/2019/10/logotipo-alargado-blanco.png" alt="">
+                    </a>
+                </div>
+                <div class="contacto-footer">
+                    <div class="contact-dir">
+                        <i class="icon-dir iconfont icon-map"></i>
+                        <span>Carrer Toll-l'Alberca Calle E, 12, 46900 Torrent, Valencia</span>
+                    </div>
+                    <div class="contact-tel">
+                        <i class="icon-tel iconfont icon-phone"></i>
+                        <span>+34961582161</span>
+                    </div>
+                    <div class="contact-email iconfont icon-email">
+                        <i class="icon-dir"></i>
+                        <span>contact@gogojump.es</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="menu-group footer-group">
+                <div class="title">
+                    <h5>MENÚ WEB</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="#"><span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Actividades</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Tarifas</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Eventos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aviso-group footer-group">
+                <div class="title">
+                    <h5>AVISO</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="#"><span>Medidas de seguridad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Política de Privacidad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Aviso legal</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-group footer-group">
+                <div class="title">
+                    <h5>REDES SOCIAL</h5>
+                </div>
+                <div class="redes-social">
+                    <li>
+                        <a href="#">
+                            <i class="instagram iconfont icon-instagram"></i>
+                            <span>@gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="facebook iconfont icon-facebook"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="YouTube iconfont icon-youtube"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-group">
+        ©2020 GoGoJump Trampoline Parks | CopyRight 2020 - Diseñado por <a href="www.welinto.com">Welinto</a>
+    </div>
+</footer>
+</body>
+</html>

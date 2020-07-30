@@ -1,0 +1,66 @@
+.banner-wrapper{
+  width: 100%;
+  height: 500px;
+  background: green;
+  .banner-item{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+      line-height: 500px;
+      color: white;
+    }
+  }
+}
+.actividad-wrapper {
+  width: 100%;
+  height: auto;
+  background: white;
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: #1C6CC1;
+  }
+
+  .actividad-list {
+    margin-top: 30px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      background: #1C6CC1;
+      margin-bottom: 20px;
+      width: 24%;
+      height: 425px;
+
+      .actividad {
+        width: 100%;
+        height: 99%;
+
+        img {
+          width: 100%;
+          height: 90%;
+        }
+
+        p {
+          text-align: center;
+          color: white;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .more {
+    button {
+      background: yellow;
+    }
+  }
+
+}

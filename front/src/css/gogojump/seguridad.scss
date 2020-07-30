@@ -1,0 +1,29 @@
+.banner-wrapper{
+  width: 100%;
+  height: 500px;
+  background: #1c6cc1;
+  .banner-item{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+      line-height: 500px;
+      color: white;
+    }
+  }
+}
+
+.seguridad-wrapper{
+  width: 100%;
+  height: auto;
+  .seguridad-content{
+    width: 70%;
+    height: auto;
+    margin: 20px auto;
+    h2{
+      text-align: center;
+
+    }
+  }
+}

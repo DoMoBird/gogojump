@@ -1,0 +1,58 @@
+.banner-wrapper{
+  width: 100%;
+  height: 500px;
+  background: green;
+  .banner-item{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    h1{
+      line-height: 500px;
+      color: white;
+    }
+  }
+}
+
+.info-wrapper{
+  width: 100%;
+  height: 400px;
+  .contacto-text-content{
+    width: 70%;
+    height: 100%;
+    margin: 20px auto;
+    .contacto-text-title{
+      font-size: 30px;
+      color: #1C6CC1;
+      text-align: center;
+    }
+    .contacto-text-desc{
+      margin: 0 auto;
+      width: 90%;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+  }
+}
+
+.contacto-wrapper{
+  width: 100%;
+  height: 500px;
+  .contacto-content{
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    .contacto-title{
+      text-align: center;
+      width: 100%;
+      height: 50px;
+      background: #1C6CC1;
+      h2{
+        color: white;
+      }
+    }
+    .contacto{
+      margin-top: 20px;
+    }
+  }
+}

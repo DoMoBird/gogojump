@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gogojump-index</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_6tob2dk1pee.css">
+    <link rel="stylesheet" href="{% static 'css/gogojump/index.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/gogojump/responsiveslides.css' %}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_bdlvav42omp.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+    <script src="{% static 'js/responsiveslides.min.js' %}"></script>
+    <script type="text/javascript">
+        $(function () {
+            // Slideshow
+            $("#slider").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                timeout: 4000,
+                pager: true,
+                pauseControls: true,
+                namespace: "callbacks"
+            });
+        });
+    </script>
+    <script>
+        /**
+         * Used to demonstrate Hover.css only. Not required when adding
+         * Hover.css to your own pages. Prevents a link from being
+         * navigated and gaining focus.
+         */
+        var effects = document.querySelectorAll('.effects')[0];
+
+        effects.addEventListener('click', function (e) {
+
+            if (e.target.className.indexOf('hvr') > -1) {
+                e.preventDefault();
+                e.target.blur();
+
+            }
+        });
+    </script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="{% url 'gogojump:index' %}">
+                <img src="{% static 'images/gogojump/logo1.png' %}" alt="">
+            </a>
+        </div>
+
+        <ul class="nav">
+            <li class="active"><a href="{% url 'gogojump:index' %}">INICIO</a></li>
+            <li><a href="{% url 'gogojump:actividades' %}">ACTIVIDADES</a></li>
+            <li><a href="{% url 'gogojump:grupos' %}">GRUPOS</a></li>
+            <li><a href="{% url 'gogojump:tarifas' %}">TARIFAS</a></li>
+            <li><a href="{% url 'gogojump:seguridad' %}">SEGURIDAD</a></li>
+            <li><a href="{% url 'gogojump:contacto' %}">CONTACTO</a></li>
+        </ul>
+        <div class="ticket" id="parallelogram">
+            <a href="#">ENTRADA</a>
+        </div>
+
+
+    </div>
+</header>
+<div class="main">
+    <div class="wrapper">
+        <div class="main-content-wrapper">
+            <div class="banner-group callbacks_container">
+                <ul class="rslides" id="slider">
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'images/gogojump/main.JPG' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'images/gogojump/main2.jpg' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="{% static 'images/gogojump/main3.jpg' %}" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <img src="{% static 'images/gogojump/main1.jpg' %}" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="desc-group">
+                <div class="desc-content-group">
+                    <div class="title-group">
+                        <h1>BIENVENIDO A GOGO JUMP VALENCIA</h1>
+                        <h3>TU MEJOR PARQUE DE SALTO EN VALENCIA</h3>
+                    </div>
+                    <div class="desc">
+
+                        <p>GoGo Jump. Trampoline Park. Tu nuevo parque de saltos que cuenta con más de 4000 m² de
+                            pura diversión y dos zonas destinadas a edades diferentes. Y es que está diseñado para
+                            que te lo pases en grande saltando, haciendo piruetas y aprendiendo volteretas con
+                            profesionales a la vez que descubres nuevos juegos y acrobacias.</p>
+
+                        <p>El parque está distribuido en dos zonas destinadas a diferentes edades: El Trampoline
+                            Park, y el Adventure Park. Además, cuenta con muchos espacios en los que podrás
+                            descansar y reponer fuerzas. En la zona Street Party tienes la opción de celebrar todos
+                            tus eventos, como cumpleaños, celebraciones de grupos o colectivos y por supuesto las
+                            fiestas con amig@s.</p>
+
+                        <p>Street Jump, actualmente el parque de trampolines indoor más grande de España. Las más
+                            modernas infraestructuras, nacidas de un sueño y confeccionadas hasta el más mínimo
+                            detalle para una experiencia “Jump” que seducirá tus sentidos.</p>
+                    </div>
+                </div>
+                <div class="logo-image">
+                    <img src="{% static 'images/gogojump/logo-desc.png' %}" alt="">
+                </div>
+            </div>
+            <div class="actividad-group effects">
+                <h3>ACTIVIDADES ZONA TRAMPOLINE PARK</h3>
+                <ul class="actividad-list">
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/million-ball-pool.jpg' %}"
+                                     alt="">
+                                <p class="title">MILLION BALL POOL</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/foam-pit.jpg' %}"
+                                     alt="">
+                                <p class="title">FOAM PIT</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/slam-dunk-area.jpg' %}" alt="">
+                                <p class="title">SLAM DUNK AREA</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/professional-trampoline.jpg' %}" alt="">
+                                <p class="title">PROFESSIONAL TAMPOLINE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/spider-wall.jpg' %}" alt="">
+                                <p class="title">SPIDER WALL</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/bubble-scoccer.jpg' %}" alt="">
+                                <p class="title">BUBBLE SOCCER</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/epp-blocks.jpg' %}" alt="">
+                                <p class="title">EPP BLOCKS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/donut-slide.jpg' %}" alt="">
+                                <p class="title">DONUT SLIDE</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="more col text-center">
+                    <a href="{% url 'gogojump:actividades' %}"><button class="btn btn-warning">MAS ACTIVIDADES</button></a>
+
+                </div>
+
+            </div>
+            <div class="event-group">
+                <h3>CELEBRA TU EVENTO O CUMPLEAÑOS CON NOSOTROS</h3>
+                <ul class="event-list">
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="event-content">
+                                <img src="https://altitudemalaga.com/wp-content/uploads/2018/12/Captura-de-pantalla-2018-10-01-a-las-17.16.25.png"
+                                     alt="">
+                                <p>Evento</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="event-content">
+                                <img src="https://altitudemalaga.com/wp-content/uploads/2018/12/Captura-de-pantalla-2018-10-01-a-las-17.16.25.png"
+                                     alt="">
+                                <p>Escolar</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="event-content">
+                                <img src="https://altitudemalaga.com/wp-content/uploads/2018/12/Captura-de-pantalla-2018-10-01-a-las-17.16.25.png"
+                                     alt="">
+                                <p>Cumpleaños</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="preguntas-group">
+                <div class="preguntas-content">
+                    <ul class="preguntas-list">
+                        <li>
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="iconos">
+                                            <p><i class="iconfont icon-person__fill"></i></p>
+                                            <span>QUÉ NECESITAS</span>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- 背面内容 -->
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="iconos">
+                                            <p><i class="iconfont icon-person__fill"></i></p>
+                                            <span>QUÉ NECESITAS</span>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- 背面内容 -->
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="iconos">
+                                            {#                                            <i class="iconfont icon-person__fill"></i>#}
+                                            <span>HORARIO</span>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- 背面内容 -->
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="iconos">
+                                            {#                                            <i class="iconfont icon-person__fill"></i>#}
+                                            <span>PREGUNTAS MÁS FRECUENTES</span>
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <!-- 背面内容 -->
+                                        back
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="contacto-group">
+                <div class="contacto-content">
+                    <div class="contacto-text">
+                        <div class="contacto-text-content">
+                            <div class="contacto-text-title">
+                                <h2 class="title">¿Quieres</h2>
+                                <h2>Contactar con</h2>
+                                <h2>GoGo Jump?</h2>
+                            </div>
+                            <div class="contacto-text-desc">
+                                <p>Ponte en contacto con nosotros para cualquier duda, preguntas o para solicitar
+                                    información sobre las reservas para eventos y cumpleaños en las distintas zonas
+                                    de Street Jump Elche.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacto">
+                        <form action="#" method="post" class="contacto-form">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Nombre</label>
+                                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre"
+                                           required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Apellidos</label>
+                                    <input type="text" class="form-control" id="inputPassword4"
+                                           placeholder="Apellidos" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="validationCustom03">Email</label>
+                                    <input type="email" class="form-control" id="validationCustom03"
+                                           placeholder="Email" required>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationCustom04">Teléfono</label>
+                                    <input type="number" class="form-control" id="validationCustom04"
+                                           placeholder="Teléfono" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce un Teléfono valido !
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="validationCustom05">Población</label>
+                                    <input type="text" class="form-control" id="validationCustom05"
+                                           placeholder="Población" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce una Población valida !
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Mensaje</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                          placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                        Acepto la política de privacidad
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">ENVIAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="map-group">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.1213018920466!2d-0.5099444846341151!3d39.42138137949324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd60511ba529de71%3A0xb1c4527b3d30aab4!2sGogo%20jump!5e0!3m2!1ses!2ses!4v1593515645889!5m2!1ses!2ses"
+                        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="top-group">
+        <div class="top-inner-group">
+            <div class="logo-group footer-group">
+                <div class="logo-box">
+                    <a href="{% url 'gogojump:index' %}">
+                        <img src="{% static 'images/gogojump/logo.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="contacto-footer">
+                    <div class="contact-dir">
+                        <i class="icon-dir iconfont icon-map"></i>
+                        <span>Carrer Toll-l'Alberca Calle E, 12, 46900 Torrent, Valencia</span>
+                    </div>
+                    <div class="contact-tel">
+                        <i class="icon-tel iconfont icon-phone"></i>
+                        <span>+34961582161</span>
+                    </div>
+                    <div class="contact-email iconfont icon-email">
+                        <i class="icon-dir"></i>
+                        <span>contact@gogojump.es</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="menu-group footer-group">
+                <div class="title">
+                    <h5>MENÚ WEB</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="{% url 'gogojump:index' %}"><span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:actividades' %}"><span>Actividades</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:tarifas' %}"><span>Tarifas</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:grupos' %}"><span>Eventos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aviso-group footer-group">
+                <div class="title">
+                    <h5>AVISO</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="{% url 'gogojump:seguridad' %}"><span>Medidas de seguridad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Política de Privacidad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Aviso legal</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:job_together' %}"><span>Trabajar con nosotros</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-group footer-group">
+                <div class="title">
+                    <h5>REDES SOCIAL</h5>
+                </div>
+                <div class="redes-social">
+                    <li>
+                        <a href="#">
+                            <i class="instagram iconfont icon-instagram"></i>
+                            <span>@gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="facebook iconfont icon-facebook"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="YouTube iconfont icon-youtube"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-group">
+        ©2020 GoGoJump Trampoline Parks | CopyRight 2020 - Diseñado por <a href="www.welinto.com">Welinto</a>
+    </div>
+</footer>
+</body>
+</html>

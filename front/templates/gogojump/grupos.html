@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gogojump-tarifas</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_6tob2dk1pee.css">
+    <link rel="stylesheet" href="{% static 'css/gogojump/index.min.css' %}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_bdlvav42omp.css">
+    <link rel="stylesheet" href="{% static 'css/gogojump/tarifas.min.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script>
+			/**
+			 * Used to demonstrate Hover.css only. Not required when adding
+			 * Hover.css to your own pages. Prevents a link from being
+			 * navigated and gaining focus.
+			 */
+			var effects = document.querySelectorAll('.effects')[0];
+
+			effects.addEventListener('click', function(e) {
+
+				if (e.target.className.indexOf('hvr') > -1) {
+					e.preventDefault();
+					e.target.blur();
+
+				}
+			});
+		</script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="{% url 'gogojump:index' %}">
+                <img src="{% static 'images/gogojump/logo1.png' %}" alt="">
+            </a>
+        </div>
+
+        <ul class="nav">
+            <li class="active"><a href="{% url 'gogojump:index' %}">INICIO</a></li>
+            <li><a href="{% url 'gogojump:actividades' %}">ACTIVIDADES</a></li>
+            <li><a href="{% url 'gogojump:grupos' %}">GRUPOS</a></li>
+            <li><a href="{% url 'gogojump:tarifas' %}">TARIFAS</a></li>
+            <li><a href="{% url 'gogojump:seguridad' %}">SEGURIDAD</a></li>
+            <li><a href="{% url 'gogojump:contacto' %}">CONTACTO</a></li>
+        </ul>
+        <div class="ticket" id="parallelogram">
+            <a href="{% url 'gogojump:entradas' %}">ENTRADA</a>
+        </div>
+
+
+    </div>
+</header>
+<div class="main">
+    <div class="wrapper">
+        <div class="main-content-wrapper">
+            <div class="banner-wrapper">
+                <div class="banner-item">
+                    <h1>Tarifas y precios</h1>
+                </div>
+            </div>
+            <div class="tarifas-wrapper effects">
+                <h1>ACCESO Y NUESTROS PRECIOS</h1>
+                <br>
+                <br>
+                <div class="tarifa-desc">
+                    <p>A continuación podrás ver todos nuestros accesos y precios, para que puedas elegir el que mejor se adapte a tus necesidades.</p>
+                    <p>Disponemos sesiones tanto para individual o grupos</p>
+                    <p>El tiempo de cada sesión es de 1 hora o 2 horas</p>
+                    <p>Con la entrada se puede acceder a todas las zonas del parque</p>
+                    <br>
+                    <h4>IMPORTANTE</h4>
+                    <p>-La altura mínima de acceso al parque es de 120cm</p>
+                    <p>-Para la persona que tiene más de 100cm y menos de 120cm de altura, tendría que estar acompañada con un adulto en el espacio</p>
+                    <p>-Esta prohibido la entrada para aquella persona menos de 100cm de altura</p>
+                    <p>-Es obligatorio el uso de los calcetines antideslizante en todas las zonas. Puede comprarlos en la recepción(1.5€/par)</p>
+                    <br>
+                </div>
+                <div class="tarifa-content-group effects">
+                    <h4>TARIFAS: LUNES A JUEVES</h4>
+                    <ul class="tarifas-lu-jue">
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/one-people.png' %}" alt="">
+                                    </div>
+                                    <h5>1 PERSONA</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>12€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>21€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/twopeople.png' %}" alt="">
+                                    </div>
+                                    <h5>2 PERSONAS</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>11€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>20€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/theerepeople.png' %}" alt="">
+                                    </div>
+                                    <h5>3 PERSONAS</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>10€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>19€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/grouppeople.png' %}" alt="">
+                                    </div>
+                                    <h5>GRUPO DE 20+</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>9€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>18€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-nota">
+                                        <span>* REGALO: Botellas de agua</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <h4>TARIFAS: VIERNES A DOMINGO Y FESTIVOS</h4>
+                    <ul class="tarifas-lu-jue festivos">
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/one-people.png' %}" alt="">
+                                    </div>
+                                    <h5>1 PERSONA</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>15€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>24€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/twopeople.png' %}" alt="">
+                                    </div>
+                                    <h5>2 PERSONAS</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>14€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>23€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/theerepeople.png' %}" alt="">
+                                    </div>
+                                    <h5>3 PERSONAS</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>13€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>22€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/grouppeople.png' %}" alt="">
+                                    </div>
+                                    <h5>4 PERSONAS</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>12€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>21€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/grouppeople.png' %}" alt="">
+                                    </div>
+                                    <h5>5+ PERSONAS</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>11€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>20€</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/grouppeople.png' %}" alt="">
+                                    </div>
+                                    <h5>GRUPO DE 20+</h5>
+                                </div>
+                                <div class="tarifa-precio">
+                                    <div class="tarifa-hora one">
+                                        <div class="hora">
+                                            <h2>1H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>10€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-hora two">
+                                        <div class="hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="precio">
+                                            <h2>19€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="tarifa-nota">
+                                        <span>* REGALO: Botellas de agua</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="hvr-grow">
+                            <div class="tarifa-detail">
+                                <div class="img-desc">
+                                    <div class="imagenes">
+                                       <img src="{% static 'images/gogojump/vip.png' %}" alt="">
+                                    </div>
+                                    <h5>BONO VIP 10</h5>
+                                </div>
+                                <div class="tarifa-bono">
+                                    <div class="tarifa-bono-hora">
+                                        <div class="bono-hora">
+                                            <h2>2H</h2>
+                                        </div>
+                                        <div class="bono-precio">
+                                            <h2>150€</h2>
+                                        </div>
+                                    </div>
+                                    <div class="bono-nota">
+                                        <span>*Promoción: Límite de 100 plazos!</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <h5>* Calcetín antideslizante de GoGoJump: 1.5€</h5>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="top-group">
+        <div class="top-inner-group">
+            <div class="logo-group footer-group">
+                <div class="logo-box">
+                    <a href="{% url 'gogojump:index' %}">
+                        <img src="{% static 'images/gogojump/logo.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="contacto-footer">
+                    <div class="contact-dir">
+                        <i class="icon-dir iconfont icon-map"></i>
+                        <span>Carrer Toll-l'Alberca Calle E, 12, 46900 Torrent, Valencia</span>
+                    </div>
+                    <div class="contact-tel">
+                        <i class="icon-tel iconfont icon-phone"></i>
+                        <span>+34961582161</span>
+                    </div>
+                    <div class="contact-email iconfont icon-email">
+                        <i class="icon-dir"></i>
+                        <span>contact@gogojump.es</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="menu-group footer-group">
+                <div class="title">
+                    <h5>MENÚ WEB</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="{% url 'gogojump:index' %}"><span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:actividades' %}"><span>Actividades</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:tarifas' %}"><span>Tarifas</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:grupos' %}"><span>Eventos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aviso-group footer-group">
+                <div class="title">
+                    <h5>AVISO</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="{% url 'gogojump:seguridad' %}"><span>Medidas de seguridad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Política de Privacidad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Aviso legal</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:job_together' %}"><span>Trabajar con nosotros</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-group footer-group">
+                <div class="title">
+                    <h5>REDES SOCIAL</h5>
+                </div>
+                <div class="redes-social">
+                    <li>
+                        <a href="#">
+                            <i class="instagram iconfont icon-instagram"></i>
+                            <span>@gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="facebook iconfont icon-facebook"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="YouTube iconfont icon-youtube"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-group">
+        ©2020 GoGoJump Trampoline Parks | CopyRight 2020 - Diseñado por <a href="www.welinto.com">Welinto</a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gogojump-index</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_6tob2dk1pee.css">
+    <link rel="stylesheet" href="{% static 'css/gogojump/index.min.css' %}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1866405_bdlvav42omp.css">
+    <link rel="stylesheet" href="{% static 'css/gogojump/actividades.min.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script>
+			/**
+			 * Used to demonstrate Hover.css only. Not required when adding
+			 * Hover.css to your own pages. Prevents a link from being
+			 * navigated and gaining focus.
+			 */
+			var effects = document.querySelectorAll('.effects')[0];
+
+			effects.addEventListener('click', function(e) {
+
+				if (e.target.className.indexOf('hvr') > -1) {
+					e.preventDefault();
+					e.target.blur();
+
+				}
+			});
+		</script>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo-box">
+            <a href="{% url 'gogojump:index' %}">
+                <img src="{% static 'images/gogojump/logo1.png' %}" alt="">
+            </a>
+        </div>
+
+        <ul class="nav">
+            <li class="active"><a href="{% url 'gogojump:index' %}">INICIO</a></li>
+            <li><a href="{% url 'gogojump:actividades' %}">ACTIVIDADES</a></li>
+            <li><a href="{% url 'gogojump:grupos' %}">GRUPOS</a></li>
+            <li><a href="{% url 'gogojump:tarifas' %}">TARIFAS</a></li>
+            <li><a href="{% url 'gogojump:seguridad' %}">SEGURIDAD</a></li>
+            <li><a href="{% url 'gogojump:contacto' %}">CONTACTO</a></li>
+        </ul>
+        <div class="ticket" id="parallelogram">
+            <a href="{% url 'gogojump:entradas' %}">ENTRADA</a>
+        </div>
+
+
+    </div>
+</header>
+<div class="main">
+    <div class="wrapper">
+        <div class="main-content-wrapper">
+            <div class="banner-wrapper">
+                <div class="banner-item">
+                    <h1>Nuestras actividades</h1>
+                </div>
+            </div>
+            <div class="actividad-wrapper effects">
+                <h1>ACTIVIDADES ZONA TRAMPOLINE PARK</h1>
+                <ul class="actividad-list">
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/million-ball-pool.jpg' %}"
+                                     alt="">
+                                <p class="title">MILLION BALL POOL</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/foam-pit.jpg' %}"
+                                     alt="">
+                                <p class="title">FOAM PIT</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/slam-dunk-area.jpg' %}" alt="">
+                                <p class="title">SLAM DUNK AREA</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/professional-trampoline.jpg' %}" alt="">
+                                <p class="title">PROFESSIONAL TAMPOLINE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/free-jump-area.jpg' %}" alt="">
+                                <p class="title">FREE JUMP AREA</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/bubble-scoccer.jpg' %}" alt="">
+                                <p class="title">BUBBLE SOCCER</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/epp-blocks.jpg' %}" alt="">
+                                <p class="title">EPP BLOCKS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/donut-slide.jpg' %}" alt="">
+                                <p class="title">DONUT SLIDE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/climbing-wall.jpg' %}" alt="">
+                                <p class="title">CLIMBING WALL</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/dodge-ball-area.jpg' %}" alt="">
+                                <p class="title">DODGE BALL AREA</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/spider-wall.jpg' %}" alt="">
+                                <p class="title">SPIDER WALL</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/ninja-course.jpg' %}" alt="">
+                                <p class="title">NINJA COURSE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/zip-line.jpg' %}" alt="">
+                                <p class="title">ZIP LINE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/scream-slide.jpg' %}" alt="">
+                                <p class="title">SCREAM SLIDE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/air-bag.jpg' %}" alt="">
+                                <p class="title">AIR BAG</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/epp-blocks.jpg' %}" alt="">
+                                <p class="title">EPP BLOCKS</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src=" {% static 'images/gogojump/hit-打斗棍区.jpg' %}" alt="">
+                                <p class="title">FIGHT STICK</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/jump信仰之跃.jpg' %}" alt="">
+                                <p class="title">LEAP OF FAITH</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/meihua梅花桩.jpg' %}" alt="">
+                                <p class="title">PLUM PILE</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvr-grow">
+                        <a href="#">
+                            <div class="actividad">
+                                <img src="{% static 'images/gogojump/rolling-bridge.jpg' %}" alt="">
+                                <p class="title">ROLLING BRIDGE</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="top-group">
+        <div class="top-inner-group">
+            <div class="logo-group footer-group">
+                <div class="logo-box">
+                    <a href="{% url 'gogojump:index' %}">
+                        <img src="{% static 'images/gogojump/logo.png' %}" alt="">
+                    </a>
+                </div>
+                <div class="contacto-footer">
+                    <div class="contact-dir">
+                        <i class="icon-dir iconfont icon-map"></i>
+                        <span>Carrer Toll-l'Alberca Calle E, 12, 46900 Torrent, Valencia</span>
+                    </div>
+                    <div class="contact-tel">
+                        <i class="icon-tel iconfont icon-phone"></i>
+                        <span>+34961582161</span>
+                    </div>
+                    <div class="contact-email iconfont icon-email">
+                        <i class="icon-dir"></i>
+                        <span>contact@gogojump.es</span>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="menu-group footer-group">
+                <div class="title">
+                    <h5>MENÚ WEB</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="{% url 'gogojump:index' %}"><span>Inicio</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:actividades' %}"><span>Actividades</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:tarifas' %}"><span>Tarifas</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:grupos' %}"><span>Eventos</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aviso-group footer-group">
+                <div class="title">
+                    <h5>AVISO</h5>
+                </div>
+                <div class="menu-desc">
+                    <ul class="desc-list">
+                        <li>
+                            <a href="{% url 'gogojump:seguridad' %}"><span>Medidas de seguridad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Política de Privacidad</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Aviso legal</span></a>
+                        </li>
+                        <li>
+                            <a href="{% url 'gogojump:job_together' %}"><span>Trabajar con nosotros</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-group footer-group">
+                <div class="title">
+                    <h5>REDES SOCIAL</h5>
+                </div>
+                <div class="redes-social">
+                    <li>
+                        <a href="#">
+                            <i class="instagram iconfont icon-instagram"></i>
+                            <span>@gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="facebook iconfont icon-facebook"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="YouTube iconfont icon-youtube"></i>
+                            <span>gogojump</span>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-group">
+        ©2020 GoGoJump Trampoline Parks | CopyRight 2020 - Diseñado por <a href="www.welinto.com">Welinto</a>
+    </div>
+</footer>
+</body>
+</html>
